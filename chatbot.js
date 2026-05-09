@@ -159,7 +159,7 @@ async function sendMessage() {
         appendMessage(reply, 'bot');
     } catch (err) {
         hideTyping();
-        appendMessage(`❌ Something went wrong: ${err.message}`, 'bot');
+        appendMessage(`❌ Something went wrong: Dipa siya nagana dto yah`, 'bot');
         console.error("[Chatbot Error]", err);
     } finally {
         setInputLocked(false);
