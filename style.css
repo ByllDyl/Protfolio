@@ -838,12 +838,171 @@ i {
     margin-top: 5px;
 }
 
-/* Responsive */
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════ */
+
+/* --- Tablet & Small Desktop (≤768px) --- */
+@media (max-width: 768px) {
+    .page-wrapper {
+        padding: 14px;
+    }
+
+    .container {
+        gap: 16px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
+
+/* --- Mobile (≤600px): header stacks vertically --- */
+@media (max-width: 600px) {
+    .page-wrapper {
+        padding: 10px;
+    }
+
+    .container {
+        gap: 14px;
+    }
+
+    .card {
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    /* Profile header — stack vertically */
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        padding-top: 40px;
+    }
+
+    .profile-info-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .profile-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-details h1 {
+        font-size: 18px;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .profile-image img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .location {
+        justify-content: center;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .profile-actions {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .profile-actions .btn {
+        flex: 1;
+        text-align: center;
+        padding: 10px 14px;
+    }
+
+    /* Move dark mode toggle to top-right corner of the card */
+    .theme-toggle {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        margin-top: 0;
+    }
+
+    /* Section titles */
+    .section-title {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    /* Timeline items */
+    .timeline-item {
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    .timeline-content h3 {
+        font-size: 12px;
+    }
+
+    /* Footer — stack on mobile */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}
+
+/* --- Very small screens (≤400px) --- */
 @media (max-width: 400px) {
+    .page-wrapper {
+        padding: 6px;
+    }
+
+    .card {
+        padding: 14px;
+        border-radius: 10px;
+    }
+
+    .profile-details h1 {
+        font-size: 16px;
+    }
+
+    .profile-image img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+    }
+
+    .profile-actions .btn {
+        width: 100%;
+    }
+
+    .pill {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+
+    .about-text p {
+        font-size: 12px;
+    }
+
+    /* Chat widget */
     .chat-widget {
         bottom: 16px;
         right: 16px;
     }
+
     .chat-panel {
         width: calc(100vw - 32px);
     }
